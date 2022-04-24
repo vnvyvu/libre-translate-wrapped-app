@@ -76,7 +76,7 @@ $(document).ready(async function () {
 
 	// Handle on click clear text button
 	$('#button-clear-text').on('click', () => {
-		textareaFromE.val('');
+		textareaFromE.attr('style', 'height: 12rem').val('');
 	});
 
 	// Handle on click copy button
