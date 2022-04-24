@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+/* Default */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+/* Body */
+body {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100vw;
+	height: auto;
+	justify-content: center;
+}
+
+/* Header */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 100%;
+}
+
+/* Main */
+main,
+#translate-text,
+#translate-file {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-top: 2rem;
+	gap: 3rem;
+}
+
+#group-btn-input {
+	flex-basis: 100%;
+	display: flex;
+	width: auto;
+	justify-content: center;
+	margin-bottom: 2vh;
+	flex-flow: row wrap;
+	gap: 10px;
+}
+
+#group-btn-input button {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	min-width: 250px;
+}
+
+#group-dropdown-textarea-input {
+	flex-basis: 100%;
+	display: flex;
+	width: auto;
+	justify-content: center;
+	margin-bottom: 2vh;
+	flex-flow: row wrap;
+	gap: 10px;
+}
+
+#group-dropdown-textarea-input .input-field {
+	min-width: 250px;
+}
+
+/* Custom materialize */
+.btn-flat {
+	border: 1px solid;
+}
+textarea.materialize-textarea {
+	height: 12rem;
+}
