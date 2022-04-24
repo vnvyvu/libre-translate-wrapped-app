@@ -84,27 +84,41 @@
 								placeholder="Any text you want to translate"
 							></textarea>
 						</div>
+						<a
+							id="button-translate-text"
+							class="waves-effect waves-light btn blue tooltipped"
+							data-position="bottom"
+							data-tooltip="Translate"
+							><i class="material-icons">send</i></a
+						>
+						<a
+							id="button-clear-text"
+							class="waves-effect waves-light btn tooltipped btn-flat"
+							data-position="bottom"
+							data-tooltip="Clear"
+							><i class="material-icons">content_cut</i></a
+						>
 					</div>
-					<div>
+					<div style="text-align: end">
 						<div class="input-field">
 							<select id="select-to"></select>
 							<label>To</label>
 						</div>
-						<div class="input-field">
+						<div class="input-field" style="text-align: end">
 							<textarea
 								id="textarea-to"
 								class="materialize-textarea"
 								placeholder="Result"
 								disabled
 							></textarea>
-							<a
-								id="button-copy"
-								class="waves-effect waves-light btn blue tooltipped"
-								data-position="bottom"
-								data-tooltip="Copy"
-								><i class="material-icons">content_copy</i></a
-							>
 						</div>
+						<a
+							id="button-copy"
+							class="waves-effect waves-light btn tooltipped btn-flat"
+							data-position="bottom"
+							data-tooltip="Copy"
+							><i class="material-icons">content_copy</i></a
+						>
 					</div>
 				</div>
 			</div>

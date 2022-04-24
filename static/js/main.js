@@ -57,6 +57,7 @@ $(document).ready(async function () {
 	}
 
 	let jobId;
+	const textareaFromE = $('#textarea-from');
 	function startTranslateJob() {
 		// Avoid spam
 		if (jobId) clearTimeout(jobId);
@@ -67,12 +68,16 @@ $(document).ready(async function () {
 	}
 
 	// Handle on keyup event textarea-from
-	const textareaFromE = $('#textarea-from');
-	textareaFromE.on('input', startTranslateJob);
+	$('#button-translate-text').on('click', startTranslateJob);
 
 	// Handle on change selectors
 	selectFromE.change(startTranslateJob);
 	selectToE.change(startTranslateJob);
+
+	// Handle on click clear text button
+	$('#button-clear-text').on('click', () => {
+		textareaFromE.val('');
+	});
 
 	// Handle on click copy button
 	$('#button-copy').on('click', () => {
